@@ -1,0 +1,4 @@
+FROM amazoncorreto: 8-jdk-alpine
+MAINTAINER gev
+COPY target/gev-0.0.1-SNAPSHOT.jar gev-app.jar
+ENTRYPOINT  ["java","-jar","/gev-app]
